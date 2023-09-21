@@ -5,7 +5,6 @@ Secondary Color (Blue): #4FB0B0 opacity 25%;
 */
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
@@ -56,7 +55,6 @@ a:hover {
 
 a:visited {
   color: #c731b3;
-  background-color: #ffffff;
   text-decoration: underline;
 }
 
@@ -190,5 +188,5 @@ footer {
 }
 
 #olivecontent .container {
-  text-align: center;
+  margin: 0 auto;
 }
