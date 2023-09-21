@@ -111,9 +111,28 @@ header {
 }
 
 /* Layout styling */
-.container {
+.logo_container {padding: 0 15px;
+}
+
+.hero_container {
   padding: 0 15px;
 }
+
+.work_container {padding: 0 15px;
+}
+
+.contact_container {padding: 0 15px;}
+
+.about_container {padding: 0 15px;}
+
+.olivecontent_container {padding: 0 15px;
+}
+
+.joshpic_container {padding: 0 15px}
+
+.story_container {padding: 0 15px}
+
+.skillstools_container {padding: 0 15px}
 
 #work .row {
   margin: 25px 0;
@@ -187,6 +206,3 @@ footer {
   text-align: center;
 }
 
-#olivecontent .container {
-  margin: 0 auto;
-}
