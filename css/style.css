@@ -26,11 +26,13 @@ h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
@@ -144,6 +146,15 @@ header {
 .logo {
   max-width: 250px;
 }
+
+.about {width: 300px;
+  margin-left: auto;
+  margin-right: auto;}
+
+#olivecontent {margin-top: 25px;
+width: 50%;
+margin-left: auto;
+margin-right: auto;}
 
 nav > ul {
   list-style-type: none;
