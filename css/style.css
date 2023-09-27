@@ -9,7 +9,7 @@ Secondary Color (Blue): #4FB0B0 opacity 25%;
 
 body {
   background-color: #ffffff;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Onest', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -107,6 +107,44 @@ header {
   -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* nav {
+    display: inline-block;
+    width: 100%; 
+} */
+nav > ul { /*affects only ul in navigation class, takes away bullet points and takes away padding so it is centered correctly*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li > a { /* only selects the list items in the nav element*/
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-family: 'Onest', sans-serif;
+    font-weight: 500;
+    color: #ffffff
+}
+nav > ul > li > a:visited {
+    color: #ffffff
+}
+
+.navtoggle li:not(:last-child) { /*this targets navigation bar and hids all tabs but last li, allowing hamburger icon to be used by js*/
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+    color:#ffffff;
+}
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
@@ -114,7 +152,7 @@ header {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(207, 197, 196, 0.5);
 }
 
 
@@ -122,21 +160,6 @@ header {
   padding: 0 0 10px;
 }
 
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-} 
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
 
 /* Layout styling */
 .container {
@@ -328,3 +351,24 @@ footer {
   display: none;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
