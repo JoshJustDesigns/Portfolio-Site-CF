@@ -59,6 +59,13 @@ img {
   width: 100%;
 }
 
+#olivecontent img {
+  width: 70%;
+  display: block; 
+  margin: 0 auto; 
+}
+
+
 .back-video {position: absolute; 
   right: 0;
 bottom: 0;
