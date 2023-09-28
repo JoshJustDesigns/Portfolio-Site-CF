@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: #04288b;
+  color: #be6d6d;
   text-decoration: underline;
 }
 
@@ -86,8 +86,6 @@ z-index: -1;
   border-bottom: 2px solid #2c8a8a;
   text-decoration: none;
   transition: 0.2s opacity;
-  /* can text decoration */
-  /* ctrl+? for this comment */
 }
 
 .button:hover {
