@@ -9,7 +9,7 @@ Secondary Color (Blue): #4FB0B0 opacity 25%;
 
 body {
   background-color: #ffffff;
-  font-family: 'Onest', sans-serif;
+  font-family: "Onest", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -46,12 +46,12 @@ h4 {
 }
 
 a {
-  color: #0c4e7a;
+  color: #3451a1;
   text-decoration: none;
 }
 
 a:hover {
-  color: #bbdfdf;
+  color: #04288b;
   text-decoration: underline;
 }
 
@@ -68,7 +68,7 @@ img {
   border-radius: 3px;
   border-bottom: 2px solid #2c8a8a;
   text-decoration: none;
-transition: 0.2s opacity;
+  transition: 0.2s opacity;
   /* can text decoration */
   /* ctrl+? for this comment */
 }
@@ -111,55 +111,57 @@ header {
     display: inline-block;
     width: 100%; 
 } */
-nav > ul { /*affects only ul in navigation class, takes away bullet points and takes away padding so it is centered correctly*/
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+nav > ul {
+  /*affects only ul in navigation class, takes away bullet points and takes away padding so it is centered correctly*/
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav > ul > li > a { /* only selects the list items in the nav element*/
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-family: 'Onest', sans-serif;
-    font-weight: 500;
-    color: #ffffff
+nav > ul > li > a {
+  /* only selects the list items in the nav element*/
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
 }
 nav > ul > li > a:visited {
-    color: #ffffff
+  color: #ffffff;
 }
 
-.navtoggle li:not(:last-child) { /*this targets navigation bar and hids all tabs but last li, allowing hamburger icon to be used by js*/
-    display: none;
+.navtoggle li:not(:last-child) {
+  /*this targets navigation bar and hids all tabs but last li, allowing hamburger icon to be used by js*/
+  display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
-    position: relative;
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
 }
 
 .navtoggle li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
-    padding-right: 0;
-    color:#ffffff;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+  color: #ffffff;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(207, 197, 196, 0.5);
 }
 
-
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
 
 /* Layout styling */
 .container {
@@ -168,12 +170,15 @@ nav > ul > li > a:visited {
 
 #work .row {
   margin: 25px 0;
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; 
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
-#aboutpicture {width: 100%;
+#aboutpicture {
+  width: 100%;
   max-width: 100%;
-  height: auto;}
+  height: auto;
+}
 
 #hero {
   background-color: #617c8f;
@@ -191,14 +196,18 @@ nav > ul > li > a:visited {
   max-width: 150px;
 }
 
-.about {width: 300px;
+.about {
+  width: 300px;
   margin-left: auto;
-  margin-right: auto;}
+  margin-right: auto;
+}
 
-#olivecontent {margin-top: 25px;
-width: 50%;
-margin-left: auto;
-margin-right: auto;}
+#olivecontent {
+  margin-top: 25px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 nav > ul {
   list-style-type: none;
@@ -235,40 +244,11 @@ footer svg {
   display: table;
 }
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
 footer {
   text-align: center;
 }
 
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -297,78 +277,64 @@ footer {
   padding: 0 10px;
 }
 
-@media only screen and (min-width: 641px) {.col-lg-3 {
-  width: 25%;
+@media only screen and (min-width: 641px) {
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .logo {
+    min-width: 300px;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
-.col-lg-4 {
-  width: 33.33%;
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    min-width: 300px;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
-.col-lg-5 {
-  width: 41.66%;
+@media only screen and (min-width: 1920px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    min-width: 300px;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
-
-.col-lg-6 {
-  width: 50%;
-}
-
-.col-lg-7 {
-  width: 58.33%;
-}
-
-.logo {min-width: 300px;}  
-
-.navtoggle li:last-child {
-  display: none;
-}
-
-}
-
-@media only screen and (min-width: 1440px) {.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logo {min-width: 300px;}  
-
-.navtoggle li:last-child {
-  display: none;
-}
-
-}
-
-@media only screen and (min-width: 1920px) {.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logo {min-width: 300px;}  
-
-.navtoggle li:last-child {
-  display: none;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
