@@ -190,11 +190,13 @@ nav > ul > li > a:visited {
 
 .video-container span {
   color: rgb(255, 255, 255); 
-font-size: large;
+  font-weight: 700;
+  font-size: large;
 }
 
 .video-container p {
   color: rgb(255, 255, 255); 
+  font-weight: 700;
   font-size: large;
 }
 
@@ -214,7 +216,7 @@ font-size: large;
   padding: 0 5%;
   display: inline-block;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
